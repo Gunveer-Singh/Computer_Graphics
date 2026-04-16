@@ -30,22 +30,19 @@ int main()
     int x = 0;
     int y = r;
 
-    int p = 3-2*r;
-
-    drawCircle(x_center, y_center, x, y);
+    int p = 1-r;
 
     while (x <= y){
+        drawCircle(x_center, y_center, x, y);
         x += 1;
 
         if (p < 0){
-            p = p + 4*x + 6;
+            p = p + 2*x + 1;
         }
         else{
             y -= 1;
-            p = p + 4*(x-y) + 10;
+            p = p + 2*(x-y) + 1;
         }
-
-        drawCircle(x_center, y_center, x, y);
     }
 
     getch();
