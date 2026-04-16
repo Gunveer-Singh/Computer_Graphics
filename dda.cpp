@@ -7,9 +7,12 @@ int main()
 {
     int gd = DETECT, gm;
     initgraph(&gd, &gm, NULL);
-
-    float x1 = 150, y1 = 300;
-    float x2 = 220, y2 = 100;
+    int x1,y1,x2,y2;
+    
+    std::cout << "Enter x1 and y1: ";
+    std::cin >> x1 >> y1;
+    std::cout << "Enter x2 and y2: ";
+    std::cin >> x2 >> y2;
 
     float dx = x2 - x1;
     float dy = y2 - y1;
