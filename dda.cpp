@@ -8,7 +8,7 @@ int main()
     int gd = DETECT, gm;
     initgraph(&gd, &gm, NULL);
 
-    float x1 = 200, y1 = 300;
+    float x1 = 150, y1 = 300;
     float x2 = 220, y2 = 100;
 
     float dx = x2 - x1;
