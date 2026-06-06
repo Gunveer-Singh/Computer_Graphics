@@ -29,6 +29,25 @@ int main()
         }
     }
 
+        if (dx < 0) {
+        dx = -dx;
+        int p = 2*dy - dx;
+        for (int i = 0; i < dx; i++) {
+            x = x - 1;
+            if (p < 0) {
+                p = p + 2*dy;
+            } else {
+                y = y + 1;
+                p = p + 2*dy - 2*dx;
+            }
+            putpixel(x, y, WHITE);
+        }
+        getch();
+        closegraph();
+        return 0;
+    }
+
+
     for(int i = 0; i < dx; i++){
         x = x + 1;
 
